@@ -1,0 +1,15 @@
+{
+  "name": "Site-Verifier",
+  "version": "1.0.0",
+  "description": "Site-Verifier is a web application that allows users to register, login, and validate website contents. It provides a user-friendly interface for managing user accounts, sending website for validation.",
+  "main":"index.js",
+  "scripts": {
+    "install-server": "cd server && npm install",
+    "start-server": "cd server && npm run start",
+    "install-client": "cd client && npm install",
+    "start-client": "cd client && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
