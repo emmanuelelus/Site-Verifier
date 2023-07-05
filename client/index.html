@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site-validify</title>
+    <link rel="stylesheet" href="static/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 onclick="window.location.href='index.html'">E-Validify</h1>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+    		  <li><a href="login.html" class="signin-btn">Sign In</a></li>
+          <li><a href="#" class="logout-btn">Log out</a></li>
+			    <li><a class="avatar">&nbsp;</a></li>
+        </ul>
+        <div class="menu" onclick="openNav()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="overlay">
+          <div class="close" onclick="closeNav()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+          <div class="overlay-content">
+            <a href="#" class="avatar">&nbsp;</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+            <a href="login.html" class="signin-btn">Sign In</a>
+            <a href="#" class="logout-btn">Logout</a>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="snap">
+          <p>Verify website in a snap</p>
+        </div>
+      </section>
+      <section class="hero">
+        <h3>Validate your website</h3>
+        <form id="emailForm">
+          <input
+            type="website"
+            id="urlInput"
+            name="email"
+            placeholder="Enter your web address"
+            required
+          />
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+      <section id="result"> 
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023    Site-validify. All rights reserved.</p>
+    </footer>
+    <script src="static/scripts/index.js"></script>
+    <script>
+      function openNav() {
+        document.querySelector(".overlay").style.width = "300px";
+        document.querySelector("main").style.marginRight = "300px";
+      }
+      function closeNav() {
+        document.querySelector(".overlay").style.width = "0";
+        document.querySelector("main").style.marginRight = "0";
+      }
+    </script>
+  </body>
+</html>
