@@ -1,6 +1,6 @@
 # Site-Verifier
 
-Site-Verifier is a web application that allows users to register, login, and validate website contents. It provides a user-friendly interface for managing user accounts, sending emails for validation, and viewing previously sent emails.
+Site-Verifier is a web application that allows users to register, login, and validate website contents. It provides a user-friendly interface for managing user accounts, sending website for validation, and viewing previously sent website.
 
 ## Table of Contents
 
